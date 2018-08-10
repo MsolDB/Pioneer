@@ -1,0 +1,4678 @@
+<?xml version="1.0" ?>
+<WatchConfig>
+<ProcessList>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>-1</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>285</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZX16DZP9NG108</UniqueName>
+<Name>Pioneer Daily_1_Unsorted</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription>Pioneer Daily pre-processing</FormDescription>
+<TTaskComment>Runs every 2 mins
+
+Checks for DEBTOR*.txt data file in the input files folder
+
+If found it runs a perl script to split the data in to 2 streams &amp; save the files to the processing folder
+
+A data mapping process is then run on these 2 files to import them in to Connect
+
+We then save just the information needed to get the files through Data Tools in to 2 .unsorted files in the same folder
+
+It is then up to the operator to manually process these files in DataTools &amp; save the sorted files with the same file name as the original files but change the extension to .sorted</TTaskComment>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList>
+<Variable>
+<VariableGroup/>
+<VariableName>newFileName</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16DIPBHYK05</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>InFile</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZNGTPPM0A</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>DPID</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZPP8WCO0B</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Sorted</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZRMD1DK0C</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Manifest</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZU28L2A0D</VariableUniquename>
+</Variable>
+</LocalVarList>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog>Folder Listing Failed</MessageLog>
+<MessageId>1</MessageId>
+<LogToNT>-1</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirListing</Plugin>
+<Config>&lt;InputDirListing&gt;
+&lt;InputFolder&gt;%{global.baseDir}\1 Input Files&lt;/InputFolder&gt;
+&lt;SortBy&gt;0&lt;/SortBy&gt;
+&lt;FileMask&gt;*.txt&lt;/FileMask&gt;
+&lt;IncludeSubDir&gt;0&lt;/IncludeSubDir&gt;
+&lt;/InputDirListing&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog>Failed to process perl script</MessageLog>
+<MessageId>1</MessageId>
+<LogToNT>-1</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionExternalProgram</Plugin>
+<Config>&lt;ExternalProgram&gt;
+&lt;Executable&gt;C:\Perl64\bin\perl.exe&lt;/Executable&gt;
+&lt;Parameters&gt;&amp;quot;DO NOT TOUCH - Pioneer_Daily_PreProcess.pl&amp;quot;&lt;/Parameters&gt;
+&lt;StartIn&gt;%{global.baseDir}\LIVE - CURRENT PRODUCTION JOB FILES&lt;/StartIn&gt;
+&lt;RunMinimize&gt;-1&lt;/RunMinimize&gt;
+&lt;CaptureOutput&gt;0&lt;/CaptureOutput&gt;
+&lt;VarOutput&gt;-&lt;/VarOutput&gt;
+&lt;VarExitCode&gt;-&lt;/VarExitCode&gt;
+&lt;CheckReturn&gt;0&lt;/CheckReturn&gt;
+&lt;Comparaison&gt;0&lt;/Comparaison&gt;
+&lt;ExitValue&gt;0&lt;/ExitValue&gt;
+&lt;ReturnValue&gt;0&lt;/ReturnValue&gt;
+&lt;/ExternalProgram&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>0</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;\d{6} - DEBTOR_\d{12}.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;-1&lt;/MaskRegex&gt;
+&lt;Directory&gt;%{global.baseDir}\2 Processing&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;-1&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>SetJobInfo</Plugin>
+<Config>&lt;SetJobInfo&gt;
+&lt;UsrVarNames0&gt;%{newFileName}&lt;/UsrVarNames0&gt;
+&lt;UsrVarValues0&gt;%O&lt;/UsrVarValues0&gt;
+&lt;/SetJobInfo&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V22.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;1&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;
+&lt;ScriptConfig&gt;'this script creates a CSV file containing address information to be cleansed by an address cleansing application
+Option Explicit
+Dim MyMeta, x, MyCSVLine, FSO, ft
+Dim myPath, myFile
+
+Set MyMeta = CreateObject(&amp;quot;MetaDataLib.MetaFile&amp;quot;)
+MyMeta.LoadFromFile(Watch.GetMetadataFileName)
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&amp;quot;global.baseDir&amp;quot;)) &amp;amp; &amp;quot;\2 Processing\&amp;quot;
+myFile =  Trim(Watch.GetVariable(&amp;quot;newFileName&amp;quot;))
+myFile = myFile &amp;amp; &amp;quot;_unsorted.txt&amp;quot;
+
+'create CSV
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+
+'Set ft = FSO.OpenTextFile(&amp;quot;c:\PPCustomer\CoH\PP\In\Group.csv&amp;quot;,2,True)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+
+ft.WriteLine(&amp;quot;Original_Sort_Order,FileID,ACCOUNT_NUMBER,First_Name,Address_Line_1,Address_Line_2,Address_Line_3,Locality,State,Postcode,Country,Source,Dt_Sort_Type,Sort_Order,Dt_BP_Sort_Order,Dt_Barcode,Dt_BSP&amp;quot;)
+
+'for all documents in group 0
+For x = 1 to MyMeta.Job.Group(0).Count
+
+        'add new CSV line
+'        MyCSVLine = MyMeta.Job.Group(0).Document(x-1).FieldByName(&amp;quot;FileID&amp;quot;)  + &amp;quot;,&amp;quot; + _
+'                    MyMeta.Job.Group(0).Document(x-1).FieldByName(&amp;quot;ACCOUNT_NUMBER&amp;quot;)
+
+        MyCSVLine = Trim(x)  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_FileID&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_First_Name&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Address_Line_1&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Address_Line_2&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Address_Line_3&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Locality&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_State&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Postcode&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Country&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Source&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Dt_Sort_Type&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Sort_Order&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Dt_BP_Sort_Code&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Dt_Barcode&amp;quot;))  + &amp;quot;,&amp;quot; + _
+                    Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_Dt_BSP&amp;quot;))
+        ft.WriteLine(MyCSVLine)
+
+Next
+
+ft.Close
+Set FSO = Nothing
+Set MyMeta = Nothing
+
+'write a file to act as a trigger for the email notification process
+myPath = Trim(Watch.GetVariable(&amp;quot;global.baseDir&amp;quot;)) &amp;amp; &amp;quot;\2 Processing\&amp;quot;
+myFile = &amp;quot;TRIGGER&amp;quot;
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+ft.WriteLine(&amp;quot;fhugeyhfruyheuworfyuoeyhruoeywharuiyhewarfiuryherfhybeuir&amp;quot;)
+ft.Close
+Set FSO = Nothing
+&lt;/ScriptConfig&gt;
+&lt;ScriptType&gt;0&lt;/ScriptType&gt;
+&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;
+&lt;ScriptFileName/&gt;
+&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.baseDir}\2 Processing&lt;/Directory&gt;
+&lt;NewName&gt;%O_orig.txt&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>-1</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>307</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZX1UKXEV03D15</UniqueName>
+<Name>Pioneer Daily_2_Sorted</Name>
+<Group/>
+<DataFileName>S:\DEVELOPMENT\DATABASES\PIONEER CREDIT\DAILY LETTERS\2 Processing\203763 - DEBTOR - 201703201429 - A - No RPE_orig.txt</DataFileName>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription>Pioneer Daily 2 stage processing</FormDescription>
+<TTaskComment>Runs every 2 mins
+
+Checks for existence of 2 x .sorted files in the processing directory
+
+If these files exist then DataTools processing is complete &amp; the print composition can be applied
+
+Step 1 is to read in the files &amp; associate them with the meta data from the pre-processing stage. This merges the sorted DataTools names &amp; addresses back with the rest of the data.
+
+We then run 2 seperate processes: 
+
+The first creates the print output, with no virtual stationary, in .ps format &amp; places the files in the spool files folder. 
+
+The second creates .pdf files with virtual stationary &amp; places them in the return to client folder.
+
+Once the last stage is completed we write a .PROCESS_COMPLETE file to the processing directory.
+
+This indicates to downstream processes that file composition has been completed &amp; the clean up process can begin.</TTaskComment>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>20</ColWidth0>
+<ColWidth1>230</ColWidth1>
+<ColWidth2>175</ColWidth2>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>2</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>&#9;</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList>
+<Variable>
+<VariableGroup/>
+<VariableName>newFileName</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16DIPBHYK05</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>InFile</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZNGTPPM0A</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>DPID</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZPP8WCO0B</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Sorted</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZRMD1DK0C</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Manifest</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZU28L2A0D</VariableUniquename>
+</Variable>
+</LocalVarList>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirListing</Plugin>
+<Config>&lt;InputDirListing&gt;
+&lt;InputFolder&gt;%{global.baseDir}\2 Processing&lt;/InputFolder&gt;
+&lt;SortBy&gt;0&lt;/SortBy&gt;
+&lt;FileMask&gt;*_sorted.txt&lt;/FileMask&gt;
+&lt;IncludeSubDir&gt;0&lt;/IncludeSubDir&gt;
+&lt;/InputDirListing&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments>Read original (unsorted data files) in for
+merging with sorted data</Comments>
+<Type>TTaskInput</Type>
+<Attributes>0</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*_orig.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;%{global.baseDir}\2 Processing&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;-1&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.baseDir}\2 Processing\TEMP&lt;/Directory&gt;
+&lt;NewName&gt;%o&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>SetJobInfo</Plugin>
+<Config>&lt;SetJobInfo&gt;
+&lt;UsrVarNames0&gt;%{newFileName}&lt;/UsrVarNames0&gt;
+&lt;UsrVarValues0&gt;%O_%u&lt;/UsrVarValues0&gt;
+&lt;UsrVarNames1&gt;%{InFile}&lt;/UsrVarNames1&gt;
+&lt;UsrVarValues1&gt;%O&lt;/UsrVarValues1&gt;
+&lt;/SetJobInfo&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V22.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;1&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;
+&lt;ScriptConfig&gt;'this script reads in the datatools sorted file ready
+'to be merged with the existing (unsorted) data
+'
+'File is in csv format &amp;amp; we need the following fields
+'
+' 01 - ACCOUNT_NUMBER
+' 02 - Sort Order
+' 03 - Original_Sort_Order
+' 04 - Dt_BSP
+' 05 - Dt_Barcode
+' 06 - Dt_BP_Sort_Order
+' 07 - Dt_Sort_Type
+
+
+Option Explicit
+Dim MyMeta, x, MyCSVLine, FSO, ft
+Dim myPath, myFile
+Dim ACCOUNT_NUMBER, Sort_Order, Original_Sort_Order
+Dim Dt_BSP, Dt_Barcode, Dt_BP_Sort_Order, Dt_Sort_Type
+
+Dim myUniqFilename
+
+Dim First_Name, Second_Name, FileID
+
+'Fields used for writing returns processing log file
+Dim myLog
+Dim LOG_JobNumber, LOG_FileName, LOG_SortOrder, LOG_FileID, LOG_FirstName, LOG_AddressLine1, LOG_AddressLine2, LOG_AddressLine3
+Dim LOG_Locality, LOG_State, LOG_Postcode, LOG_Country, LOG_AccountNumber, LOG_DebtCode, LOG_LetterType, LOG_FileReceiveDate, LOG_LodgementDate
+Dim LOG_Day, LOG_Month, LOG_Year
+
+Set MyMeta = CreateObject(&amp;quot;MetaDataLib.MetaFile&amp;quot;)
+MyMeta.LoadFromFile(Watch.GetMetadataFileName)
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&amp;quot;global.baseDir&amp;quot;)) &amp;amp; &amp;quot;\2 Processing\&amp;quot;
+myFile = Trim(Watch.GetVariable(&amp;quot;InFile&amp;quot;))
+myFile = Replace(myFile,&amp;quot;_orig&amp;quot;,&amp;quot;_sorted&amp;quot;)
+myFile = myFile &amp;amp; &amp;quot;.txt&amp;quot;
+
+myUniqFilename = Trim(Watch.GetVariable(&amp;quot;InFile&amp;quot;))
+myUniqFilename = mid(myUniqFilename,19,12)
+myUniqFilename = &amp;quot;DEBTOR_&amp;quot; + myUniqFilename
+
+myLog = myFile
+myLog = Replace(myLOG,&amp;quot;_sorted&amp;quot;,&amp;quot;_LOG&amp;quot;)
+'myLog = myLOG &amp;amp; &amp;quot;.txt&amp;quot;
+
+Watch.Log &amp;quot;myFile ---&amp;gt; &amp;quot; &amp;amp; myFile,1
+''Watch.Log &amp;quot;myLOG ---&amp;gt; &amp;quot; &amp;amp; myLOG,1
+
+'create CSV
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,1)
+
+Dim LSO, LOGFILE
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Line 50
+Set LSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set LOGFILE = LSO.OpenTextFile(myPath &amp;amp; myLog,2,True)
+
+'Create return to sender files
+Dim myRTC, RSO, RTCFILE
+myRTC = myLog
+myRTC = Replace(myRTC,&amp;quot;_LOG&amp;quot;,&amp;quot;_RTC&amp;quot;)
+Set RSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set RTCFILE = RSO.OpenTextFile(myPath &amp;amp; myRTC,2,True)
+RTCFILE.WriteLine(&amp;quot;JOB NUMBER,FILE NAME,SORT ORDER,FILE ID,FIRST NAME,ADDRESS LINE 1,ADDRESS LINE 2,ADDRESS LINE 3,LOCALITY,STATE,POSTCODE,COUNTRY,ACCOUNT NUMBER,DEBT CODE,LETTER CODE&amp;quot;)
+
+
+'Test 1
+MyMeta.Job.Add(1)
+
+Dim n, myLine, myFields, myUID, myBarcode, myBSP, mySort_Order, my_Orig_Sort_Order
+Dim myAddr1, myAddr2, myAddr3, myLoc, myState, myPC, myCountry
+
+n = 0
+myLine = &amp;quot;&amp;quot;
+Do While ft.AtEndOfStream &amp;lt;&amp;gt; True
+   myLine = ft.ReadLine
+
+   if n &amp;gt; 0 then
+     myFields = CSVParse(myLine)
+
+     my_Orig_Sort_Order = myFields(2)
+     mySort_Order = myFields(1)           'Sort Order
+     myUID = myFields(4)                  'ACCOUNT_NUMBER
+     myBarcode = myFields(15)             'Dt_Barcode
+     myBSP = myFields(16)                 'Dt_BSP
+
+     myAddr1 = myFields(6)              'Addr1
+     myAddr2 = myFields(7)              'Addr2
+     myAddr3 = myFields(8)              'Addr3
+     myLoc = myFields(9)              'Locality
+     myState = myFields(10)             'State
+     myPC = myFields(11)             'Postcode
+     myCountry = myFields(12)             'Country
+
+     if n = 1 then
+       FileID = myFields(3)
+       First_Name = myFields(5)
+     end if
+     if n = 2 then
+       Second_Name = myFields(5)
+     end if
+
+     if myBarcode = &amp;quot;Not Sorted&amp;quot; then
+       myBarcode = &amp;quot;&amp;quot;
+     end if
+
+     Watch.Log &amp;quot;Account Number ---&amp;gt; &amp;quot; &amp;amp; MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;),1
+
+     Watch.Log &amp;quot;Sort Order ---&amp;gt; &amp;quot; &amp;amp; myFields(1),1
+     Watch.Log &amp;quot;myUID ---&amp;gt; &amp;quot; &amp;amp; myFields(4),1
+     Watch.Log &amp;quot;Barcode ---&amp;gt; &amp;quot; &amp;amp; myFields(15),1
+     Watch.Log &amp;quot;BSP ---&amp;gt; &amp;quot; &amp;amp; myFields(16),1
+     Watch.Log &amp;quot;myUniqFilename ---&amp;gt; &amp;quot; &amp;amp; myUniqFilename,1
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Sort_Order&amp;quot;,mySort_Order
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Dt_Barcode&amp;quot;,myBarcode
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Dt_BSP&amp;quot;,myBSP
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Filename&amp;quot;,myUniqFilename
+
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Address_Line_1&amp;quot;,myAddr1
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Address_Line_2&amp;quot;,myAddr2
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Address_Line_3&amp;quot;,myAddr3
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Locality&amp;quot;,myLoc
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_State&amp;quot;,myState
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Postcode&amp;quot;,myPC
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Country&amp;quot;,myCountry
+
+'Write Log File
+     LOG_JobNumber = Mid(myFields(0),1,6)
+     LOG_FileName = Mid(myFields(0),10,21)
+     LOG_SortOrder = myFields(1)
+
+     LOG_Year = Mid(myFields(0),19,4)
+     LOG_Month = Mid(myFields(0),23,2)
+     LOG_Day = Mid(myFields(0),25,2)
+
+     LOG_FileReceiveDate = LOG_Day + &amp;quot;-&amp;quot; + LOG_Month + &amp;quot;-&amp;quot; + LOG_Year
+'     LOG_Day = CInt(LOG_Day)+1
+     LOG_LodgementDate = LOG_Day + &amp;quot;-&amp;quot; + LOG_Month + &amp;quot;-&amp;quot; + LOG_Year
+
+     MyCSVLine = Trim(LOG_JobNumber)  + VBTab + _
+                   Trim(LOG_FileName)  + VBTab + _
+                    Trim(LOG_SortOrder)  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_FileID&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_First_Name&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_1&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_2&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_3&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Locality&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_State&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Postcode&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Country&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_DEBT_CODE&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_LETTER_CODE&amp;quot;))  + VBTab + _
+                    Trim(LOG_FileReceiveDate)  + VBTab + _
+                    Trim(LOG_LodgementDate)
+     LOGFILE.WriteLine(MyCSVLine)
+
+'RTS File
+     MyCSVLine = Trim(LOG_JobNumber)  + VBTab + _
+                   Trim(LOG_FileName)  + VBTab + _
+                    Trim(LOG_SortOrder)  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_FileID&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_First_Name&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_1&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_2&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_3&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Locality&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_State&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Postcode&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Country&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_DEBT_CODE&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_LETTER_CODE&amp;quot;))
+     RTCFILE.WriteLine(MyCSVLine)
+
+
+'Test 1
+    MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Copy
+    MyMeta.Job.Group(1).paste
+
+   End If
+   n = n + 1
+Loop
+
+ft.Close
+LOGFILE.Close
+RTCFILE.Close
+
+'Test 1
+MyMeta.Job.Group(0).delete
+MyMeta.SaveToFile(Watch.GetMetadataFileName)
+
+
+
+'Write First Names to end of run report
+Dim myFileName
+
+myFile = &amp;quot;Pioneer Daily Letter Report.csv&amp;quot;
+
+'Open report file for appending (format 8)
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,8)
+
+ft.WriteLine &amp;quot;,&amp;quot;
+
+if FileID = &amp;quot;A&amp;quot; then
+  ft.WriteLine &amp;quot;Stream A,First Name,&amp;quot; &amp;amp; First_Name
+  ft.WriteLine &amp;quot;Stream A,Second Name,&amp;quot; &amp;amp; Second_Name
+end if
+
+if FileID = &amp;quot;B&amp;quot; then
+  ft.WriteLine &amp;quot;Stream B,First Name,&amp;quot; &amp;amp; First_Name
+  ft.WriteLine &amp;quot;Stream B,Second Name,&amp;quot; &amp;amp; Second_Name
+end if
+
+ft.Close
+
+
+
+
+
+'--- helper csv function
+Function CSVParse(ByVal strLine)
+    ' Function to parse comma delimited line and return array
+    ' of field values.
+
+    Dim arrFields
+    Dim blnIgnore
+    Dim intFieldCount
+    Dim intCursor
+    Dim intStart
+    Dim strChar
+    Dim strValue
+
+    Const QUOTE = &amp;quot;&amp;quot;&amp;quot;&amp;quot;
+    Const QUOTE2 = &amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;
+
+    ' Check for empty string and return empty array.
+    If (Len(Trim(strLine)) = 0) then
+        CSVParse = Array()
+        Exit Function
+    End If
+
+    ' Initialize.
+    blnIgnore = False
+    intFieldCount = 0
+    intStart = 1
+    arrFields = Array()
+
+    ' Add &amp;quot;,&amp;quot; to delimit the last field.
+    strLine = strLine &amp;amp; &amp;quot;,&amp;quot;
+
+    ' Walk the string.
+    For intCursor = 1 To Len(strLine)
+        ' Get a character.
+        strChar = Mid(strLine, intCursor, 1)
+        Select Case strChar
+            Case QUOTE
+                ' Toggle the ignore flag.
+                blnIgnore = Not blnIgnore
+            Case &amp;quot;,&amp;quot;
+                If Not blnIgnore Then
+                    ' Add element to the array.
+                    ReDim Preserve arrFields(intFieldCount)
+                    ' Makes sure the &amp;quot;field&amp;quot; has a non-zero length.
+                    If (intCursor - intStart &amp;gt; 0) Then
+                        ' Extract the field value.
+                        strValue = Mid(strLine, intStart, _
+                            intCursor - intStart)
+                        ' If it's a quoted string, use Mid to
+                        ' remove outer quotes and replace inner
+                        ' doubled quotes with single.
+                        If (Left(strValue, 1) = QUOTE) Then
+                            arrFields(intFieldCount) = _
+                                Replace(Mid(strValue, 2, _
+                                Len(strValue) - 2), QUOTE2, QUOTE)
+                        Else
+                            arrFields(intFieldCount) = strValue
+                        End If
+                    Else
+                        ' An empty field is an empty array element.
+                        arrFields(intFieldCount) = Empty
+                    End If
+                    ' increment for next field.
+                    intFieldCount = intFieldCount + 1
+                    intStart = intCursor + 1
+                End If
+        End Select
+    Next
+    ' Return the array.
+    CSVParse = arrFields
+End Function
+&lt;/ScriptConfig&gt;
+&lt;ScriptType&gt;0&lt;/ScriptType&gt;
+&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;
+&lt;ScriptFileName/&gt;
+&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskBranch</Type>
+<Attributes>0</Attributes>
+<Plugin>InternalBranch</Plugin>
+<Config/>
+<BackupJobFile>-1</BackupJobFile>
+<BackupJobInfo>-1</BackupJobInfo>
+<BackupEmulation>0</BackupEmulation>
+<BackupLocalVariables>0</BackupLocalVariables>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionMetaSequencer</Plugin>
+<Config>&lt;ActionMetaSequencer&gt;
+&lt;MetaSplitType&gt;0&lt;/MetaSplitType&gt;
+&lt;MetaSplitCount&gt;1000&lt;/MetaSplitCount&gt;
+&lt;MetaSplitDelimiter&gt;0&lt;/MetaSplitDelimiter&gt;
+&lt;MetaSplitRule/&gt;
+&lt;MetaSplitDisplayRule/&gt;
+&lt;MetaSplitOn&gt;1&lt;/MetaSplitOn&gt;
+&lt;NumberOfSequence/&gt;
+&lt;/ActionMetaSequencer&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;Template&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V22.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;DataType&gt;1&lt;/DataType&gt;
+&lt;UpdateRecords&gt;true&lt;/UpdateRecords&gt;
+&lt;JSONData/&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;Pioneer Daily V19 - LIVE.OL-jobpreset&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;Pioneer Daily - V19 - LIVE.OL-outputpreset&lt;/OutputConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;Destination&gt;1&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.baseDir}\3 Spool Files&lt;/Directory&gt;
+&lt;NewName&gt;%O_%i.ps&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>-1</UseComments>
+<Comments>Save letters as individual pdf files to be zipped &amp; encrypted ready for delivery to client</Comments>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionMetaSequencer</Plugin>
+<Config>&lt;ActionMetaSequencer&gt;
+&lt;MetaSplitType&gt;0&lt;/MetaSplitType&gt;
+&lt;MetaSplitCount&gt;5000&lt;/MetaSplitCount&gt;
+&lt;MetaSplitDelimiter&gt;0&lt;/MetaSplitDelimiter&gt;
+&lt;MetaSplitRule/&gt;
+&lt;MetaSplitDisplayRule/&gt;
+&lt;MetaSplitOn&gt;1&lt;/MetaSplitOn&gt;
+&lt;NumberOfSequence/&gt;
+&lt;/ActionMetaSequencer&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;Template&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V22.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;DataType&gt;1&lt;/DataType&gt;
+&lt;UpdateRecords&gt;true&lt;/UpdateRecords&gt;
+&lt;JSONData/&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;Pioneer Daily V25 RTC - LIVE.OL-jobpreset&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;Pioneer Daily - V25 RTC - LIVE.OL-outputpreset&lt;/OutputConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;Destination&gt;0&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;&lt;ScriptConfig&gt;Option Explicit
+
+'create a temporary file to indicate that the current process has been completed
+
+Dim FSO, ft
+Dim myPath, myFile
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&quot;global.baseDir&quot;)) &amp;amp; &quot;\2 Processing\&quot;
+
+myFile = Trim(Watch.GetVariable(&quot;InFile&quot;))
+myFile = myFile &amp;amp; &quot;.PROCESS_COMPLETE&quot;
+
+Set FSO = CreateObject(&quot;Scripting.FileSystemObject&quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+
+ft.Close
+&lt;/ScriptConfig&gt;&lt;ScriptType&gt;0&lt;/ScriptType&gt;&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;&lt;ScriptFileName&gt;&lt;/ScriptFileName&gt;&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>SMTP</Plugin>
+<Config>&lt;SMTP&gt;
+&lt;To&gt;david@mailingsolutions.net.au&lt;/To&gt;
+&lt;Cc/&gt;
+&lt;Bcc/&gt;
+&lt;Subject&gt;Archive Ready&lt;/Subject&gt;
+&lt;Message&gt;Archive Ready&lt;/Message&gt;
+&lt;AttachJob&gt;0&lt;/AttachJob&gt;
+&lt;EmailEdit/&gt;
+&lt;EmailAttach/&gt;
+&lt;ZipMode&gt;0&lt;/ZipMode&gt;
+&lt;ZipPassword&gt;0&lt;/ZipPassword&gt;
+&lt;ZPassword/&gt;
+&lt;ZipFilename/&gt;
+&lt;UserName&gt;David Bell&lt;/UserName&gt;
+&lt;AccountName&gt;lachlan@mailingsolutions.net.au&lt;/AccountName&gt;
+&lt;Authentification&gt;-1&lt;/Authentification&gt;
+&lt;Host&gt;mail.amnet.net.au&lt;/Host&gt;
+&lt;Password&gt;S4/bri8dv0X8&lt;/Password&gt;
+&lt;UseSmtp&gt;-1&lt;/UseSmtp&gt;
+&lt;Organization&gt;Mailing Solutions&lt;/Organization&gt;
+&lt;EmailAddress&gt;david@mailingsolutions.net.au&lt;/EmailAddress&gt;
+&lt;ReplyAddress&gt;david@mailingsolutions.net.au&lt;/ReplyAddress&gt;
+&lt;UseMapi&gt;0&lt;/UseMapi&gt;
+&lt;Port&gt;25&lt;/Port&gt;
+&lt;/SMTP&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>-1</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>4</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZYASLCJGTFR10</UniqueName>
+<Name>Sphere CC Extraction</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<ColWidth2>175</ColWidth2>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList>
+<Variable>
+<VariableGroup/>
+<VariableName>newFileName</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZYASNRW6H9Z11</VariableUniquename>
+</Variable>
+</LocalVarList>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*Credit Card*.pdf; *CC*.pdf&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Data\CreditCardLetters&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskBranch</Type>
+<Attributes>0</Attributes>
+<Plugin>InternalBranch</Plugin>
+<Config/>
+<BackupJobFile>-1</BackupJobFile>
+<BackupJobInfo>-1</BackupJobInfo>
+<BackupEmulation>0</BackupEmulation>
+<BackupLocalVariables>0</BackupLocalVariables>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Data\CreditCardLetters&lt;/Directory&gt;
+&lt;NewName&gt;%o.bak&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;Sphere CC - Extract Data From PDF.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;1&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>SetJobInfo</Plugin>
+<Config>&lt;SetJobInfo&gt;
+&lt;UsrVarNames0&gt;%{newFileName}&lt;/UsrVarNames0&gt;
+&lt;UsrVarValues0&gt;%O&lt;/UsrVarValues0&gt;
+&lt;/SetJobInfo&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;
+&lt;ScriptConfig&gt;'this script creates a CSV file containing address information to be cleansed by an address cleansing application
+Option Explicit
+Dim MyMeta, x, MyCSVLine, MyFileHeadings, FSO, ft
+Dim myPath, myFile
+
+Dim Addr2, Loc, State, Postcode, Country
+
+Dim SeqNumber
+
+Set MyMeta = CreateObject(&amp;quot;MetaDataLib.MetaFile&amp;quot;)
+MyMeta.LoadFromFile(Watch.GetMetadataFileName)
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&amp;quot;global.SphereBaseDir&amp;quot;)) &amp;amp; &amp;quot;\Data\&amp;quot;
+myFile =  Trim(Watch.GetVariable(&amp;quot;newFileName&amp;quot;))
+myFile = Replace(myFile,&amp;quot;.&amp;quot;,&amp;quot;&amp;quot;)
+myFile = myFile &amp;amp; &amp;quot;_unsorted.txt&amp;quot;
+
+'create CSV
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+
+'Set ft = FSO.OpenTextFile(&amp;quot;c:\PPCustomer\CoH\PP\In\Group.csv&amp;quot;,2,True)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+
+MyFileHeadings = chr(34) + &amp;quot;SeqNumber&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;LetterType&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;FirstName&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;AddressLine1&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;Locality&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;State&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;Postcode&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;Country&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;AccountNumber&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;ArrearsDue&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;LetterDate&amp;quot; + chr(34)
+ft.WriteLine(MyFileHeadings)
+
+SeqNumber = 1
+'for all documents in group 0
+For x = 1 to MyMeta.Job.Group(0).Count
+
+        'add new CSV line
+
+        Addr2 = &amp;quot;&amp;quot;
+        Loc = &amp;quot;&amp;quot;
+        State = &amp;quot;&amp;quot;
+        Postcode = &amp;quot;&amp;quot;
+        Country = &amp;quot;&amp;quot;
+
+        Addr2 = Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_AddressLine2&amp;quot;))
+
+        'skip empty pages
+        if(Addr2 &amp;lt;&amp;gt; &amp;quot;&amp;quot;) then
+          Postcode = trim(Right(Addr2,4))
+          State = trim(Mid(Addr2,Len(Addr2)-7,3))
+          Loc = trim(Left(Addr2,Len(Addr2)-8))
+
+          if(Postcode = &amp;quot;0000&amp;quot;) then
+                  Country = Loc
+                  Loc = &amp;quot;&amp;quot;
+                  State = &amp;quot;&amp;quot;
+                  Postcode = &amp;quot;&amp;quot;
+          end if
+
+          MyCSVLine = chr(34) + Trim(SeqNumber) + chr(34) + vbTab + _
+                      chr(34) + &amp;quot;CC_Letter&amp;quot; + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_FirstName&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_AddressLine1&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Loc + chr(34) + vbTab + _
+                      chr(34) + State + chr(34) + vbTab + _
+                      chr(34) + Postcode + chr(34) + vbTab + _
+                      chr(34) + Country + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_CreditCardNumber&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_ArrearsDue&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_LetterDate&amp;quot;)) + chr(34)
+          ft.WriteLine(MyCSVLine)
+          SeqNumber = SeqNumber + 1
+        end if
+Next
+
+ft.Close
+Set FSO = Nothing
+Set MyMeta = Nothing
+
+'write a file to act as a trigger for the email notification process
+myPath = Trim(Watch.GetVariable(&amp;quot;global.SphereBaseDir&amp;quot;)) &amp;amp; &amp;quot;\Data\&amp;quot;
+myFile = &amp;quot;TRIGGER&amp;quot;
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+ft.WriteLine(&amp;quot;fhugeyhfruyheuworfyuoeyhruoeywharuiyhewarfiuryherfhybeuir&amp;quot;)
+ft.Close
+Set FSO = Nothing
+
+&lt;/ScriptConfig&gt;
+&lt;ScriptType&gt;0&lt;/ScriptType&gt;
+&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;
+&lt;ScriptFileName/&gt;
+&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDelete</Plugin>
+<Config>&lt;OutputDelete&gt;
+&lt;RecycleBin&gt;0&lt;/RecycleBin&gt;
+&lt;/OutputDelete&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>-1</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>4</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZYASTLU2IJ514</UniqueName>
+<Name>Sphere PL Extraction</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<ColWidth2>175</ColWidth2>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList>
+<Variable>
+<VariableGroup/>
+<VariableName>newFileName</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZYASNRW6H9Z11</VariableUniquename>
+</Variable>
+</LocalVarList>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*Personal Loan*.pdf; *PL*.pdf&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Data\PersonalLoanLetters&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskBranch</Type>
+<Attributes>0</Attributes>
+<Plugin>InternalBranch</Plugin>
+<Config/>
+<BackupJobFile>-1</BackupJobFile>
+<BackupJobInfo>-1</BackupJobInfo>
+<BackupEmulation>0</BackupEmulation>
+<BackupLocalVariables>0</BackupLocalVariables>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Data\PersonalLoanLetters&lt;/Directory&gt;
+&lt;NewName&gt;%o.bak&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;Sphere PL - Extract Data From PDF.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;1&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>SetJobInfo</Plugin>
+<Config>&lt;SetJobInfo&gt;
+&lt;UsrVarNames0&gt;%{newFileName}&lt;/UsrVarNames0&gt;
+&lt;UsrVarValues0&gt;%O&lt;/UsrVarValues0&gt;
+&lt;/SetJobInfo&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;
+&lt;ScriptConfig&gt;'this script creates a CSV file containing address information to be cleansed by an address cleansing application
+Option Explicit
+Dim MyMeta, x, MyCSVLine, MyFileHeadings, FSO, ft
+Dim myPath, myFile
+
+Dim Addr2, Loc, State, Postcode, Country
+
+Dim SeqNumber
+
+Set MyMeta = CreateObject(&amp;quot;MetaDataLib.MetaFile&amp;quot;)
+MyMeta.LoadFromFile(Watch.GetMetadataFileName)
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&amp;quot;global.SphereBaseDir&amp;quot;)) &amp;amp; &amp;quot;\Data\&amp;quot;
+myFile =  Trim(Watch.GetVariable(&amp;quot;newFileName&amp;quot;))
+myFile = Replace(myFile,&amp;quot;.&amp;quot;,&amp;quot;&amp;quot;)
+myFile = myFile &amp;amp; &amp;quot;_unsorted.txt&amp;quot;
+
+'create CSV
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+
+'Set ft = FSO.OpenTextFile(&amp;quot;c:\PPCustomer\CoH\PP\In\Group.csv&amp;quot;,2,True)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+
+MyFileHeadings = chr(34) + &amp;quot;SeqNumber&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;LetterType&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;FirstName&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;AddressLine1&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;Locality&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;State&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;Postcode&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;Country&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;AccountNumber&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;ArrearsDue&amp;quot; + chr(34) + vbTab + _
+            chr(34) + &amp;quot;LetterDate&amp;quot; + chr(34)
+ft.WriteLine(MyFileHeadings)
+
+SeqNumber = 1
+'for all documents in group 0
+For x = 1 to MyMeta.Job.Group(0).Count
+
+        'add new CSV line
+
+        Addr2 = &amp;quot;&amp;quot;
+        Loc = &amp;quot;&amp;quot;
+        State = &amp;quot;&amp;quot;
+        Postcode = &amp;quot;&amp;quot;
+        Country = &amp;quot;&amp;quot;
+
+        Addr2 = Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_AddressLine2&amp;quot;))
+
+        'skip empty pages
+        if(Addr2 &amp;lt;&amp;gt; &amp;quot;&amp;quot;) then
+          Postcode = trim(Right(Addr2,4))
+          State = trim(Mid(Addr2,Len(Addr2)-7,3))
+          Loc = trim(Left(Addr2,Len(Addr2)-8))
+
+          if(Postcode = &amp;quot;0000&amp;quot;) then
+                  Country = Loc
+                  Loc = &amp;quot;&amp;quot;
+                  State = &amp;quot;&amp;quot;
+                  Postcode = &amp;quot;&amp;quot;
+          end if
+
+          MyCSVLine = chr(34) + Trim(SeqNumber) + chr(34) + vbTab + _
+                      chr(34) + &amp;quot;PL_Letter&amp;quot; + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_FirstName&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_AddressLine1&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Loc + chr(34) + vbTab + _
+                      chr(34) + State + chr(34) + vbTab + _
+                      chr(34) + Postcode + chr(34) + vbTab + _
+                      chr(34) + Country + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_LoanNumber&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_ArrearsDue&amp;quot;)) + chr(34) + vbTab + _
+                      chr(34) + Trim(MyMeta.Job().Group(0).Document(x-1).FieldByName(&amp;quot;_vger_fld_LetterDate&amp;quot;)) + chr(34)
+          ft.WriteLine(MyCSVLine)
+          SeqNumber = SeqNumber + 1
+        end if
+Next
+
+ft.Close
+Set FSO = Nothing
+Set MyMeta = Nothing
+
+'write a file to act as a trigger for the email notification process
+myPath = Trim(Watch.GetVariable(&amp;quot;global.SphereBaseDir&amp;quot;)) &amp;amp; &amp;quot;\Data\&amp;quot;
+myFile = &amp;quot;TRIGGER&amp;quot;
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+ft.WriteLine(&amp;quot;fhugeyhfruyheuworfyuoeyhruoeywharuiyhewarfiuryherfhybeuir&amp;quot;)
+ft.Close
+Set FSO = Nothing
+&lt;/ScriptConfig&gt;
+&lt;ScriptType&gt;0&lt;/ScriptType&gt;
+&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;
+&lt;ScriptFileName/&gt;
+&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDelete</Plugin>
+<Config>&lt;OutputDelete&gt;
+&lt;RecycleBin&gt;0&lt;/RecycleBin&gt;
+&lt;/OutputDelete&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>-1</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>4</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZYB3B49AR5E14</UniqueName>
+<Name>Create_Sphere_Letters</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<ColWidth2>175</ColWidth2>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList/>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*OUTPUT FILE*.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Data&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskBranch</Type>
+<Attributes>0</Attributes>
+<Plugin>InternalBranch</Plugin>
+<Config/>
+<BackupJobFile>-1</BackupJobFile>
+<BackupJobInfo>-1</BackupJobInfo>
+<BackupEmulation>0</BackupEmulation>
+<BackupLocalVariables>0</BackupLocalVariables>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Data&lt;/Directory&gt;
+&lt;NewName&gt;%o.bak&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;Sphere Letters.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;1&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;Template&gt;Sphere Letters.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;UpdateRecords&gt;true&lt;/UpdateRecords&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;Sphere Daily Letters.OL-jobpreset&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;Sphere Daily Letters.OL-outputpreset&lt;/OutputConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;Destination&gt;1&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionExternalProgram</Plugin>
+<Config>&lt;ExternalProgram&gt;
+&lt;Executable&gt;C:\Perl64\bin\perl.exe&lt;/Executable&gt;
+&lt;Parameters&gt;&amp;quot;Sphere - Write Report v2.pl&amp;quot;&lt;/Parameters&gt;
+&lt;StartIn&gt;%{global.SphereBaseDir}&lt;/StartIn&gt;
+&lt;RunMinimize&gt;-1&lt;/RunMinimize&gt;
+&lt;CaptureOutput&gt;0&lt;/CaptureOutput&gt;
+&lt;VarOutput&gt;-&lt;/VarOutput&gt;
+&lt;VarExitCode&gt;-&lt;/VarExitCode&gt;
+&lt;CheckReturn&gt;0&lt;/CheckReturn&gt;
+&lt;Comparaison&gt;0&lt;/Comparaison&gt;
+&lt;ExitValue&gt;0&lt;/ExitValue&gt;
+&lt;ReturnValue&gt;0&lt;/ReturnValue&gt;
+&lt;/ExternalProgram&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.SphereBaseDir}\Spool Files&lt;/Directory&gt;
+&lt;NewName&gt;%O_%i.ps&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>0</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>4</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZZD2G9PFSD115</UniqueName>
+<Name>CBH Adhoc Member Statements</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList/>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\IN&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\IN\backup&lt;/Directory&gt;
+&lt;NewName&gt;%o&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;CBH Test Data - Draft 17.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;2&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;Template&gt;CBH Test Data - Draft 17.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;UpdateRecords&gt;false&lt;/UpdateRecords&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;CBH Member Statements.OL-jobpreset&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;CBH Member Statements.OL-outputpreset&lt;/OutputConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;Destination&gt;1&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\OUT&lt;/Directory&gt;
+&lt;NewName&gt;%O_%i.ps&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>0</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>0</MaxPercent>
+<Delay>4</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZZD2SQDJBP616</UniqueName>
+<Name>CBH Adhoc Member Statements V2</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg/>
+<StoreID/>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList/>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\IN&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\IN\backup&lt;/Directory&gt;
+&lt;NewName&gt;%o&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;%{global.Server_Port}&lt;/ServerPort&gt;
+&lt;DMConfig&gt;CBH Test Data - Draft 17.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;2&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;%{global.Server_UName}&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;%{global.Server_Port}&lt;/ServerPort&gt;
+&lt;Template&gt;CBH Test Data - Draft 17.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;UpdateRecords&gt;false&lt;/UpdateRecords&gt;
+&lt;ServerUserName&gt;%{global.Server_UName}&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;%o&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;%{global.Server_Port}&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;%{global.Server_UName}&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;1&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;%{global.Server_Port}&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;%{global.Server_UName}&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;%o&lt;/OutputConfig&gt;
+&lt;LineType&gt;1&lt;/LineType&gt;
+&lt;Destination&gt;1&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\OUT&lt;/Directory&gt;
+&lt;NewName&gt;%o&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>0</Active>
+<Startup>0</Startup>
+<SelfRepl>-1</SelfRepl>
+<MaxPercent>75</MaxPercent>
+<Delay>3600</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>00ZZD45WT5CU21A</UniqueName>
+<Name>CBH Adhoc Member Statement AllInOne</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList/>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\IN&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionDirectPrint</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;%{global.Server_Port}&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;%{global.Server_UName}&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;Source&gt;0&lt;/Source&gt;
+&lt;DMConfig&gt;CBH Live Data - V2.OL-datamapper&lt;/DMConfig&gt;
+&lt;DMLType&gt;2&lt;/DMLType&gt;
+&lt;CCConfig&gt;CBH Live Data - V2.OL-template&lt;/CCConfig&gt;
+&lt;CCLType&gt;2&lt;/CCLType&gt;
+&lt;Section/&gt;
+&lt;OCConfig&gt;CBH Member Stmts - PDF 1UP.OL-outputpreset&lt;/OCConfig&gt;
+&lt;OCLType&gt;2&lt;/OCLType&gt;
+&lt;RuleSet&gt;&amp;lt;ruleset&amp;gt;
+&amp;lt;condition&amp;gt;
+&amp;lt;type&amp;gt;1&amp;lt;/type&amp;gt;
+&amp;lt;leftexpression/&amp;gt;
+&amp;lt;rightexpression/&amp;gt;
+&amp;lt;operator&amp;gt;0&amp;lt;/operator&amp;gt;
+&amp;lt;/condition&amp;gt;
+&amp;lt;/ruleset&amp;gt;
+&lt;/RuleSet&gt;
+&lt;FilrerType&gt;0&lt;/FilrerType&gt;
+&lt;SortDoc/&gt;
+&lt;Destination&gt;1&lt;/Destination&gt;
+&lt;DoNotStoreRec&gt;-1&lt;/DoNotStoreRec&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;\\Msol-p1\Groups\DATABASES\AAA MISCELLANEOUS\COOPERATIVE BULK HANDLING\JOB 204462 CBH MEMBER STATEMENTS\OUT&lt;/Directory&gt;
+&lt;NewName&gt;%O.pdf&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>0</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>307</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>010059VX7D4PV20</UniqueName>
+<Name>Pioneer Daily_2_Sorted_V2</Name>
+<Group/>
+<DataFileName>S:\DEVELOPMENT\DATABASES\PIONEER CREDIT\DAILY LETTERS\2 Processing\203763 - DEBTOR - 201703201429 - A - No RPE_orig.txt</DataFileName>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription>Pioneer Daily 2 stage processing</FormDescription>
+<TTaskComment>Runs every 2 mins
+
+Checks for existence of 2 x .sorted files in the processing directory
+
+If these files exist then DataTools processing is complete &amp; the print composition can be applied
+
+Step 1 is to read in the files &amp; associate them with the meta data from the pre-processing stage. This merges the sorted DataTools names &amp; addresses back with the rest of the data.
+
+We then run 2 seperate processes: 
+
+The first creates the print output, with no virtual stationary, in .ps format &amp; places the files in the spool files folder. 
+
+The second creates .pdf files with virtual stationary &amp; places them in the return to client folder.
+
+Once the last stage is completed we write a .PROCESS_COMPLETE file to the processing directory.
+
+This indicates to downstream processes that file composition has been completed &amp; the clean up process can begin.</TTaskComment>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>20</ColWidth0>
+<ColWidth1>230</ColWidth1>
+<ColWidth2>175</ColWidth2>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>2</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>&#9;</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList>
+<Variable>
+<VariableGroup/>
+<VariableName>newFileName</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16DIPBHYK05</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>InFile</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZNGTPPM0A</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>DPID</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZPP8WCO0B</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Sorted</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZRMD1DK0C</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Manifest</VariableName>
+<VariableValue/>
+<VariableUniquename>00ZX16ZU28L2A0D</VariableUniquename>
+</Variable>
+</LocalVarList>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirListing</Plugin>
+<Config>&lt;InputDirListing&gt;
+&lt;InputFolder&gt;%{global.baseDir}\2 Processing&lt;/InputFolder&gt;
+&lt;SortBy&gt;0&lt;/SortBy&gt;
+&lt;FileMask&gt;*_sorted.txt&lt;/FileMask&gt;
+&lt;IncludeSubDir&gt;0&lt;/IncludeSubDir&gt;
+&lt;/InputDirListing&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments>Read original (unsorted data files) in for
+merging with sorted data</Comments>
+<Type>TTaskInput</Type>
+<Attributes>0</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*_orig.txt&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;%{global.baseDir}\2 Processing&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;-1&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.baseDir}\2 Processing\TEMP&lt;/Directory&gt;
+&lt;NewName&gt;%o&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>SetJobInfo</Plugin>
+<Config>&lt;SetJobInfo&gt;
+&lt;UsrVarNames0&gt;%{newFileName}&lt;/UsrVarNames0&gt;
+&lt;UsrVarValues0&gt;%O_%u&lt;/UsrVarValues0&gt;
+&lt;UsrVarNames1&gt;%{InFile}&lt;/UsrVarNames1&gt;
+&lt;UsrVarValues1&gt;%O&lt;/UsrVarValues1&gt;
+&lt;/SetJobInfo&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V20.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;1&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;
+&lt;ScriptConfig&gt;'this script reads in the datatools sorted file ready
+'to be merged with the existing (unsorted) data
+'
+'File is in csv format &amp;amp; we need the following fields
+'
+' 01 - ACCOUNT_NUMBER
+' 02 - Sort Order
+' 03 - Original_Sort_Order
+' 04 - Dt_BSP
+' 05 - Dt_Barcode
+' 06 - Dt_BP_Sort_Order
+' 07 - Dt_Sort_Type
+
+
+Option Explicit
+Dim MyMeta, x, MyCSVLine, FSO, ft
+Dim myPath, myFile
+Dim ACCOUNT_NUMBER, Sort_Order, Original_Sort_Order
+Dim Dt_BSP, Dt_Barcode, Dt_BP_Sort_Order, Dt_Sort_Type
+
+Dim myUniqFilename
+
+Dim First_Name, Second_Name, FileID
+
+'Fields used for writing returns processing log file
+Dim myLog
+Dim LOG_JobNumber, LOG_FileName, LOG_SortOrder, LOG_FileID, LOG_FirstName, LOG_AddressLine1, LOG_AddressLine2, LOG_AddressLine3
+Dim LOG_Locality, LOG_State, LOG_Postcode, LOG_Country, LOG_AccountNumber, LOG_DebtCode, LOG_LetterType, LOG_FileReceiveDate, LOG_LodgementDate
+Dim LOG_Day, LOG_Month, LOG_Year
+
+Set MyMeta = CreateObject(&amp;quot;MetaDataLib.MetaFile&amp;quot;)
+MyMeta.LoadFromFile(Watch.GetMetadataFileName)
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&amp;quot;global.baseDir&amp;quot;)) &amp;amp; &amp;quot;\2 Processing\&amp;quot;
+myFile = Trim(Watch.GetVariable(&amp;quot;InFile&amp;quot;))
+myFile = Replace(myFile,&amp;quot;_orig&amp;quot;,&amp;quot;_sorted&amp;quot;)
+myFile = myFile &amp;amp; &amp;quot;.txt&amp;quot;
+
+myUniqFilename = Trim(Watch.GetVariable(&amp;quot;InFile&amp;quot;))
+myUniqFilename = mid(myUniqFilename,19,12)
+myUniqFilename = &amp;quot;DEBTOR_&amp;quot; + myUniqFilename
+
+myLog = myFile
+myLog = Replace(myLOG,&amp;quot;_sorted&amp;quot;,&amp;quot;_LOG&amp;quot;)
+'myLog = myLOG &amp;amp; &amp;quot;.txt&amp;quot;
+
+Watch.Log &amp;quot;myFile ---&amp;gt; &amp;quot; &amp;amp; myFile,1
+''Watch.Log &amp;quot;myLOG ---&amp;gt; &amp;quot; &amp;amp; myLOG,1
+
+'create CSV
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,1)
+
+Dim LSO, LOGFILE
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Line 50
+Set LSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set LOGFILE = LSO.OpenTextFile(myPath &amp;amp; myLog,2,True)
+
+'Create return to sender files
+Dim myRTC, RSO, RTCFILE
+myRTC = myLog
+myRTC = Replace(myRTC,&amp;quot;_LOG&amp;quot;,&amp;quot;_RTC&amp;quot;)
+Set RSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set RTCFILE = RSO.OpenTextFile(myPath &amp;amp; myRTC,2,True)
+RTCFILE.WriteLine(&amp;quot;JOB NUMBER,FILE NAME,SORT ORDER,FILE ID,FIRST NAME,ADDRESS LINE 1,ADDRESS LINE 2,ADDRESS LINE 3,LOCALITY,STATE,POSTCODE,COUNTRY,ACCOUNT NUMBER,DEBT CODE,LETTER CODE&amp;quot;)
+
+
+'Test 1
+MyMeta.Job.Add(1)
+
+Dim n, myLine, myFields, myUID, myBarcode, myBSP, mySort_Order, my_Orig_Sort_Order
+Dim myAddr1, myAddr2, myAddr3, myLoc, myState, myPC, myCountry
+
+n = 0
+myLine = &amp;quot;&amp;quot;
+Do While ft.AtEndOfStream &amp;lt;&amp;gt; True
+   myLine = ft.ReadLine
+
+   if n &amp;gt; 0 then
+     myFields = CSVParse(myLine)
+
+     my_Orig_Sort_Order = myFields(2)
+     mySort_Order = myFields(1)           'Sort Order
+     myUID = myFields(4)                  'ACCOUNT_NUMBER
+     myBarcode = myFields(15)             'Dt_Barcode
+     myBSP = myFields(16)                 'Dt_BSP
+
+     myAddr1 = myFields(6)              'Addr1
+     myAddr2 = myFields(7)              'Addr2
+     myAddr3 = myFields(8)              'Addr3
+     myLoc = myFields(9)              'Locality
+     myState = myFields(10)             'State
+     myPC = myFields(11)             'Postcode
+     myCountry = myFields(12)             'Country
+
+     if n = 1 then
+       FileID = myFields(3)
+       First_Name = myFields(5)
+     end if
+     if n = 2 then
+       Second_Name = myFields(5)
+     end if
+
+     if myBarcode = &amp;quot;Not Sorted&amp;quot; then
+       myBarcode = &amp;quot;&amp;quot;
+     end if
+
+     Watch.Log &amp;quot;Account Number ---&amp;gt; &amp;quot; &amp;amp; MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;),1
+
+     Watch.Log &amp;quot;Sort Order ---&amp;gt; &amp;quot; &amp;amp; myFields(1),1
+     Watch.Log &amp;quot;myUID ---&amp;gt; &amp;quot; &amp;amp; myFields(4),1
+     Watch.Log &amp;quot;Barcode ---&amp;gt; &amp;quot; &amp;amp; myFields(15),1
+     Watch.Log &amp;quot;BSP ---&amp;gt; &amp;quot; &amp;amp; myFields(16),1
+     Watch.Log &amp;quot;myUniqFilename ---&amp;gt; &amp;quot; &amp;amp; myUniqFilename,1
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Sort_Order&amp;quot;,mySort_Order
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Dt_Barcode&amp;quot;,myBarcode
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Dt_BSP&amp;quot;,myBSP
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Filename&amp;quot;,myUniqFilename
+
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Address_Line_1&amp;quot;,myAddr1
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Address_Line_2&amp;quot;,myAddr2
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Address_Line_3&amp;quot;,myAddr3
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Locality&amp;quot;,myLoc
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_State&amp;quot;,myState
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Postcode&amp;quot;,myPC
+
+     MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Fields.Add &amp;quot;_vger_fld_Country&amp;quot;,myCountry
+
+'Write Log File
+     LOG_JobNumber = Mid(myFields(0),1,6)
+     LOG_FileName = Mid(myFields(0),10,21)
+     LOG_SortOrder = myFields(1)
+
+     LOG_Year = Mid(myFields(0),19,4)
+     LOG_Month = Mid(myFields(0),23,2)
+     LOG_Day = Mid(myFields(0),25,2)
+
+     LOG_FileReceiveDate = LOG_Day + &amp;quot;-&amp;quot; + LOG_Month + &amp;quot;-&amp;quot; + LOG_Year
+'     LOG_Day = CInt(LOG_Day)+1
+     LOG_LodgementDate = LOG_Day + &amp;quot;-&amp;quot; + LOG_Month + &amp;quot;-&amp;quot; + LOG_Year
+
+     MyCSVLine = Trim(LOG_JobNumber)  + VBTab + _
+                   Trim(LOG_FileName)  + VBTab + _
+                    Trim(LOG_SortOrder)  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_FileID&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_First_Name&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_1&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_2&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_3&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Locality&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_State&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Postcode&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Country&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_DEBT_CODE&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_LETTER_CODE&amp;quot;))  + VBTab + _
+                    Trim(LOG_FileReceiveDate)  + VBTab + _
+                    Trim(LOG_LodgementDate)
+     LOGFILE.WriteLine(MyCSVLine)
+
+'RTS File
+     MyCSVLine = Trim(LOG_JobNumber)  + VBTab + _
+                   Trim(LOG_FileName)  + VBTab + _
+                    Trim(LOG_SortOrder)  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_FileID&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_First_Name&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_1&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_2&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Address_Line_3&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Locality&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_State&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Postcode&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_Country&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_ACCOUNT_NUMBER&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_DEBT_CODE&amp;quot;))  + VBTab + _
+                    Trim(MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).FieldByName(&amp;quot;_vger_fld_LETTER_CODE&amp;quot;))
+     RTCFILE.WriteLine(MyCSVLine)
+
+
+'Test 1
+    MyMeta.Job.Group(0).Document(my_Orig_Sort_Order - 1).Copy
+    MyMeta.Job.Group(1).paste
+
+   End If
+   n = n + 1
+Loop
+
+ft.Close
+LOGFILE.Close
+RTCFILE.Close
+
+'Test 1
+MyMeta.Job.Group(0).delete
+MyMeta.SaveToFile(Watch.GetMetadataFileName)
+
+
+
+'Write First Names to end of run report
+Dim myFileName
+
+myFile = &amp;quot;Pioneer Daily Letter Report.csv&amp;quot;
+
+'Open report file for appending (format 8)
+Set FSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,8)
+
+ft.WriteLine &amp;quot;,&amp;quot;
+
+if FileID = &amp;quot;A&amp;quot; then
+  ft.WriteLine &amp;quot;Stream A,First Name,&amp;quot; &amp;amp; First_Name
+  ft.WriteLine &amp;quot;Stream A,Second Name,&amp;quot; &amp;amp; Second_Name
+end if
+
+if FileID = &amp;quot;B&amp;quot; then
+  ft.WriteLine &amp;quot;Stream B,First Name,&amp;quot; &amp;amp; First_Name
+  ft.WriteLine &amp;quot;Stream B,Second Name,&amp;quot; &amp;amp; Second_Name
+end if
+
+ft.Close
+
+
+
+
+
+'--- helper csv function
+Function CSVParse(ByVal strLine)
+    ' Function to parse comma delimited line and return array
+    ' of field values.
+
+    Dim arrFields
+    Dim blnIgnore
+    Dim intFieldCount
+    Dim intCursor
+    Dim intStart
+    Dim strChar
+    Dim strValue
+
+    Const QUOTE = &amp;quot;&amp;quot;&amp;quot;&amp;quot;
+    Const QUOTE2 = &amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;
+
+    ' Check for empty string and return empty array.
+    If (Len(Trim(strLine)) = 0) then
+        CSVParse = Array()
+        Exit Function
+    End If
+
+    ' Initialize.
+    blnIgnore = False
+    intFieldCount = 0
+    intStart = 1
+    arrFields = Array()
+
+    ' Add &amp;quot;,&amp;quot; to delimit the last field.
+    strLine = strLine &amp;amp; &amp;quot;,&amp;quot;
+
+    ' Walk the string.
+    For intCursor = 1 To Len(strLine)
+        ' Get a character.
+        strChar = Mid(strLine, intCursor, 1)
+        Select Case strChar
+            Case QUOTE
+                ' Toggle the ignore flag.
+                blnIgnore = Not blnIgnore
+            Case &amp;quot;,&amp;quot;
+                If Not blnIgnore Then
+                    ' Add element to the array.
+                    ReDim Preserve arrFields(intFieldCount)
+                    ' Makes sure the &amp;quot;field&amp;quot; has a non-zero length.
+                    If (intCursor - intStart &amp;gt; 0) Then
+                        ' Extract the field value.
+                        strValue = Mid(strLine, intStart, _
+                            intCursor - intStart)
+                        ' If it's a quoted string, use Mid to
+                        ' remove outer quotes and replace inner
+                        ' doubled quotes with single.
+                        If (Left(strValue, 1) = QUOTE) Then
+                            arrFields(intFieldCount) = _
+                                Replace(Mid(strValue, 2, _
+                                Len(strValue) - 2), QUOTE2, QUOTE)
+                        Else
+                            arrFields(intFieldCount) = strValue
+                        End If
+                    Else
+                        ' An empty field is an empty array element.
+                        arrFields(intFieldCount) = Empty
+                    End If
+                    ' increment for next field.
+                    intFieldCount = intFieldCount + 1
+                    intStart = intCursor + 1
+                End If
+        End Select
+    Next
+    ' Return the array.
+    CSVParse = arrFields
+End Function
+&lt;/ScriptConfig&gt;
+&lt;ScriptType&gt;0&lt;/ScriptType&gt;
+&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;
+&lt;ScriptFileName/&gt;
+&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskBranch</Type>
+<Attributes>0</Attributes>
+<Plugin>InternalBranch</Plugin>
+<Config/>
+<BackupJobFile>-1</BackupJobFile>
+<BackupJobInfo>-1</BackupJobInfo>
+<BackupEmulation>0</BackupEmulation>
+<BackupLocalVariables>0</BackupLocalVariables>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionMetaSequencer</Plugin>
+<Config>&lt;ActionMetaSequencer&gt;
+&lt;MetaSplitType&gt;0&lt;/MetaSplitType&gt;
+&lt;MetaSplitCount&gt;5000&lt;/MetaSplitCount&gt;
+&lt;MetaSplitDelimiter&gt;0&lt;/MetaSplitDelimiter&gt;
+&lt;MetaSplitRule/&gt;
+&lt;MetaSplitDisplayRule/&gt;
+&lt;MetaSplitOn&gt;1&lt;/MetaSplitOn&gt;
+&lt;NumberOfSequence/&gt;
+&lt;/ActionMetaSequencer&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;Template&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V20.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;UpdateRecords&gt;true&lt;/UpdateRecords&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;Pioneer Daily V19 - LIVE.OL-jobpreset&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;Pioneer Daily - V19 - LIVE.OL-outputpreset&lt;/OutputConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;Destination&gt;1&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;%{global.baseDir}\3 Spool Files&lt;/Directory&gt;
+&lt;NewName&gt;%O_%i.ps&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>-1</UseComments>
+<Comments>Save letters as individual pdf files to be zipped &amp; encrypted ready for delivery to client</Comments>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionMetaSequencer</Plugin>
+<Config>&lt;ActionMetaSequencer&gt;
+&lt;MetaSplitType&gt;0&lt;/MetaSplitType&gt;
+&lt;MetaSplitCount&gt;1&lt;/MetaSplitCount&gt;
+&lt;MetaSplitDelimiter&gt;0&lt;/MetaSplitDelimiter&gt;
+&lt;MetaSplitRule/&gt;
+&lt;MetaSplitDisplayRule/&gt;
+&lt;MetaSplitOn&gt;1&lt;/MetaSplitOn&gt;
+&lt;NumberOfSequence/&gt;
+&lt;/ActionMetaSequencer&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateContentSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;Template&gt;DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V20.OL-template&lt;/Template&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;DataType&gt;1&lt;/DataType&gt;
+&lt;UpdateRecords&gt;true&lt;/UpdateRecords&gt;
+&lt;JSONData/&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateJob</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;JobConfig&gt;Pioneer Daily V21 RTC - LIVE.OL-jobpreset&lt;/JobConfig&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionOutputCreation</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName&gt;ol_admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;OutputConfig&gt;Pioneer Daily - V21 RTC - LIVE.OL-outputpreset&lt;/OutputConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;Destination&gt;0&lt;/Destination&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>0</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg/>
+<StoreID/>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>PWScript</Plugin>
+<Config>&lt;PWScript&gt;&lt;ScriptConfig&gt;Option Explicit
+
+'create a temporary file to indicate that the current process has been completed
+
+Dim FSO, ft
+Dim myPath, myFile
+
+'set file path &amp;amp; name
+myPath = Trim(Watch.GetVariable(&quot;global.baseDir&quot;)) &amp;amp; &quot;\2 Processing\&quot;
+
+myFile = Trim(Watch.GetVariable(&quot;InFile&quot;))
+myFile = myFile &amp;amp; &quot;.PROCESS_COMPLETE&quot;
+
+Set FSO = CreateObject(&quot;Scripting.FileSystemObject&quot;)
+Set ft = FSO.OpenTextFile(myPath &amp;amp; myFile,2,True)
+
+ft.Close
+&lt;/ScriptConfig&gt;&lt;ScriptType&gt;0&lt;/ScriptType&gt;&lt;ScriptRunType&gt;0&lt;/ScriptRunType&gt;&lt;ScriptFileName&gt;&lt;/ScriptFileName&gt;&lt;/PWScript&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>SMTP</Plugin>
+<Config>&lt;SMTP&gt;
+&lt;To&gt;david@mailingsolutions.net.au&lt;/To&gt;
+&lt;Cc/&gt;
+&lt;Bcc/&gt;
+&lt;Subject&gt;Pioneer Archive&lt;/Subject&gt;
+&lt;Message&gt;Files are ready&lt;/Message&gt;
+&lt;AttachJob&gt;0&lt;/AttachJob&gt;
+&lt;EmailEdit/&gt;
+&lt;EmailAttach/&gt;
+&lt;ZipMode&gt;0&lt;/ZipMode&gt;
+&lt;ZipPassword&gt;0&lt;/ZipPassword&gt;
+&lt;ZPassword/&gt;
+&lt;ZipFilename/&gt;
+&lt;UserName&gt;David&lt;/UserName&gt;
+&lt;AccountName&gt;lachlan@mailingsolutions.net.au&lt;/AccountName&gt;
+&lt;Authentification&gt;-1&lt;/Authentification&gt;
+&lt;Host&gt;mail.amnet.net.au&lt;/Host&gt;
+&lt;Password&gt;S4/bri8dv0X8&lt;/Password&gt;
+&lt;UseSmtp&gt;-1&lt;/UseSmtp&gt;
+&lt;Organization&gt;Mailing Solutions&lt;/Organization&gt;
+&lt;EmailAddress&gt;david@mailingsolutions.net.au&lt;/EmailAddress&gt;
+&lt;ReplyAddress&gt;david@mailingsolutions.net.au&lt;/ReplyAddress&gt;
+&lt;UseMapi&gt;0&lt;/UseMapi&gt;
+&lt;Port&gt;25&lt;/Port&gt;
+&lt;/SMTP&gt;</Config>
+</Node>
+</Process>
+<Process>
+<RunOnDesktop>0</RunOnDesktop>
+<DaysToKeepBackup>10</DaysToKeepBackup>
+<Scheduler>
+<Active>-1</Active>
+<Startup>0</Startup>
+<SelfRepl>0</SelfRepl>
+<MaxPercent>20</MaxPercent>
+<Delay>4</Delay>
+<AsSoon>-1</AsSoon>
+<OneTime>0</OneTime>
+<Period>0</Period>
+<Week>1</Week>
+<Interval>2</Interval>
+<Matrix>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Matrix>
+</Scheduler>
+<UniqueName>0100T7D827ILN20</UniqueName>
+<Name>CFSEtractTrackingInfo</Name>
+<Group/>
+<DataFileName/>
+<MetaFileName/>
+<JobInfo1/>
+<JobInfo2/>
+<JobInfo3/>
+<JobInfo4/>
+<JobInfo5/>
+<JobInfo6/>
+<JobInfo7/>
+<JobInfo8/>
+<JobInfo9/>
+<ZoomOut>0</ZoomOut>
+<FormDescription/>
+<TTaskComment/>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<ColWidth0>15</ColWidth0>
+<ColWidth1>175</ColWidth1>
+<Emulation>
+<AddRemoveChars>0</AddRemoveChars>
+<AddRemoveLines>0</AddRemoveLines>
+<Ascii>0</Ascii>
+<ChangePageOnRecordEnd>-1</ChangePageOnRecordEnd>
+<EmulationType>0</EmulationType>
+<DataEncodingID>19</DataEncodingID>
+<FieldDelimiter>,</FieldDelimiter>
+<LinesPerPage>66</LinesPerPage>
+<PageBuffers>1</PageBuffers>
+<RemoveHPEscapes>0</RemoveHPEscapes>
+<TabOnCR>0</TabOnCR>
+<TabOnCRSize>120</TabOnCRSize>
+<TabSize>8</TabSize>
+<TempFileName/>
+<TextDelimiter>&quot;</TextDelimiter>
+<UseFF>-1</UseFF>
+<CacheXmlData>-1</CacheXmlData>
+<DBConfig>
+<inFile/>
+<connectString/>
+<SQLStatement/>
+<customSQL/>
+<master/>
+<records>0</records>
+<firstRec>0</firstRec>
+<lastRec>0</lastRec>
+<table/>
+<sort>0</sort>
+<allOrSome>0</allOrSome>
+<passwordLocked>0</passwordLocked>
+<suppressBrackets>0</suppressBrackets>
+<ClientSideCursor>0</ClientSideCursor>
+<password/>
+<fieldSizes/>
+</DBConfig>
+<SKIPTOCOLUMN>
+<mc_Char></mc_Char>
+<mi_column>120</mi_column>
+</SKIPTOCOLUMN>
+<SKIPTOLINEARR>
+<SkipToLineChars0.mc_char>2</SkipToLineChars0.mc_char>
+<SkipToLineChars0.mi_line>10</SkipToLineChars0.mi_line>
+<SkipToLineChars1.mc_char>3</SkipToLineChars1.mc_char>
+<SkipToLineChars1.mi_line>16</SkipToLineChars1.mi_line>
+<SkipToLineChars2.mc_char>4</SkipToLineChars2.mc_char>
+<SkipToLineChars2.mi_line>22</SkipToLineChars2.mi_line>
+<SkipToLineChars3.mc_char>5</SkipToLineChars3.mc_char>
+<SkipToLineChars3.mi_line>28</SkipToLineChars3.mi_line>
+<SkipToLineChars4.mc_char>6</SkipToLineChars4.mc_char>
+<SkipToLineChars4.mi_line>34</SkipToLineChars4.mi_line>
+<SkipToLineChars5.mc_char>7</SkipToLineChars5.mc_char>
+<SkipToLineChars5.mi_line>40</SkipToLineChars5.mi_line>
+<SkipToLineChars6.mc_char>8</SkipToLineChars6.mc_char>
+<SkipToLineChars6.mi_line>46</SkipToLineChars6.mi_line>
+<SkipToLineChars7.mc_char>9</SkipToLineChars7.mc_char>
+<SkipToLineChars7.mi_line>66</SkipToLineChars7.mi_line>
+<SkipToLineChars8.mc_char>A</SkipToLineChars8.mc_char>
+<SkipToLineChars8.mi_line>52</SkipToLineChars8.mi_line>
+<SkipToLineChars9.mc_char>B</SkipToLineChars9.mc_char>
+<SkipToLineChars9.mi_line>58</SkipToLineChars9.mi_line>
+<SkipToLineChars10.mc_char>C</SkipToLineChars10.mc_char>
+<SkipToLineChars10.mi_line>64</SkipToLineChars10.mi_line>
+<SkipToLineChars11.mc_char></SkipToLineChars11.mc_char>
+<SkipToLineChars11.mi_line>1</SkipToLineChars11.mi_line>
+</SKIPTOLINEARR>
+<SKIPXLINES>
+<SkipXLines0>&#32;</SkipXLines0>
+<SkipXLines1>0</SkipXLines1>
+<SkipXLines2>-</SkipXLines2>
+<SkipXLines3></SkipXLines3>
+<SkipXLines4></SkipXLines4>
+<SkipXLines5></SkipXLines5>
+<SkipXLines6></SkipXLines6>
+<SkipXLines7></SkipXLines7>
+<SkipXLines8></SkipXLines8>
+<SkipXLines9>1</SkipXLines9>
+<SkipXLines10>+</SkipXLines10>
+</SKIPXLINES>
+</Emulation>
+<LocalVarList/>
+<Node>
+<ActionType>2</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskInput</Type>
+<Attributes>1</Attributes>
+<Plugin>InputDirectory</Plugin>
+<Config>&lt;InputDirectory&gt;
+&lt;Mask&gt;*.pdf&lt;/Mask&gt;
+&lt;MaskRegex&gt;0&lt;/MaskRegex&gt;
+&lt;Directory&gt;C:\Users\DavidBell\Desktop\JOB 204841 COLONIAL FIRST STATE\Input&lt;/Directory&gt;
+&lt;SortType&gt;0&lt;/SortType&gt;
+&lt;SortOrder&gt;0&lt;/SortOrder&gt;
+&lt;UseArchiveAttr&gt;0&lt;/UseArchiveAttr&gt;
+&lt;SubDirectories&gt;0&lt;/SubDirectories&gt;
+&lt;SortDiretories&gt;0&lt;/SortDiretories&gt;
+&lt;HiddenFiles&gt;0&lt;/HiddenFiles&gt;
+&lt;EmptyFiles&gt;0&lt;/EmptyFiles&gt;
+&lt;/InputDirectory&gt;</Config>
+<AddList/>
+<Backup>0</Backup>
+<BackupName/>
+<DelMeta>-1</DelMeta>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskAction</Type>
+<Attributes>0</Attributes>
+<Plugin>ActionCreateDataSet</Plugin>
+<Config>&lt;ActionCreateDataSet&gt;
+&lt;ServerIP&gt;%{global.Server_IP}&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;DMConfig&gt;204841 Extract Parcel Tracking Info.OL-datamapper&lt;/DMConfig&gt;
+&lt;LineType&gt;2&lt;/LineType&gt;
+&lt;ReturnType&gt;2&lt;/ReturnType&gt;
+&lt;ServerUserName&gt;ol-admin&lt;/ServerUserName&gt;
+&lt;ServerPassword&gt;dXtNsSti&lt;/ServerPassword&gt;
+&lt;/ActionCreateDataSet&gt;</Config>
+</Node>
+<Node>
+<ActionType>0</ActionType>
+<SendToProcess>0</SendToProcess>
+<ErrorBinProcess/>
+<MessageLog/>
+<MessageId>1</MessageId>
+<LogToNT>0</LogToNT>
+<validateType>0</validateType>
+<validateName/>
+<StoreMsg>-</StoreMsg>
+<StoreID>-</StoreID>
+<UseComments>0</UseComments>
+<Comments/>
+<Type>TTaskOutput</Type>
+<Attributes>2</Attributes>
+<Plugin>OutputDirectory</Plugin>
+<Config>&lt;OutputDirectory&gt;
+&lt;Directory&gt;C:\Users\DavidBell\Desktop\JOB 204841 COLONIAL FIRST STATE\Output&lt;/Directory&gt;
+&lt;NewName&gt;%O.xml&lt;/NewName&gt;
+&lt;Concat&gt;0&lt;/Concat&gt;
+&lt;SepString&gt;\014&lt;/SepString&gt;
+&lt;/OutputDirectory&gt;</Config>
+</Node>
+</Process>
+</ProcessList>
+<SubProcessList/>
+<GlobalVarList>
+<Variable>
+<VariableGroup/>
+<VariableName>baseDir</VariableName>
+<VariableValue>\\Msol-p1\Groups\DATABASES\PIONEER CREDIT\DAILY LETTERS WORKFLOW</VariableValue>
+<VariableUniquename>00ZX16FHGP27J09</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Server_IP</VariableName>
+<VariableValue>192.168.1.10</VariableValue>
+<VariableUniquename>00ZXAEIACL6AO10</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>SphereBaseDir</VariableName>
+<VariableValue>\\Msol-p1\Groups\DATABASES\SPHERE LEGAL\DAILY LETTER PROCESSING</VariableValue>
+<VariableUniquename>00ZYASICPRIPJ10</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Server_Port</VariableName>
+<VariableValue>9340</VariableValue>
+<VariableUniquename>00ZZD3JZARC6217</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Server_UName</VariableName>
+<VariableValue>ol-admin</VariableValue>
+<VariableUniquename>00ZZD3K56FSL618</VariableUniquename>
+</Variable>
+<Variable>
+<VariableGroup/>
+<VariableName>Workflow_Version</VariableName>
+<VariableValue>10-08-2018 - LIVE</VariableValue>
+<VariableUniquename>0101LAXZ52VMJ21</VariableUniquename>
+</Variable>
+</GlobalVarList>
+<DocumentList/>
+<PrinterList/>
+<PrinterGroupList/>
+<ExpressionList/>
+<HTTP>&lt;HTTP&gt;
+&lt;AutoStartHTTP&gt;-1&lt;/AutoStartHTTP&gt;
+&lt;DebugMode&gt;-1&lt;/DebugMode&gt;
+&lt;Timeout&gt;120&lt;/Timeout&gt;
+&lt;HTTPPort&gt;8080&lt;/HTTPPort&gt;
+&lt;SSLServer&gt;0&lt;/SSLServer&gt;
+&lt;SSLRootCert&gt;C:\Documents and Settings\potvinb\Bureau\SOAP\certificates\old\cacert.pem&lt;/SSLRootCert&gt;
+&lt;SSLCert&gt;C:\Documents and Settings\potvinb\Bureau\SOAP\certificates\old\cacert.pem&lt;/SSLCert&gt;
+&lt;SSLKey&gt;C:\Documents and Settings\potvinb\Bureau\SOAP\certificates\old\privkey.pem&lt;/SSLKey&gt;
+&lt;SSLMode&gt;0&lt;/SSLMode&gt;
+&lt;DisableSOAPServer&gt;0&lt;/DisableSOAPServer&gt;
+&lt;OmitCData&gt;0&lt;/OmitCData&gt;
+&lt;DoPHPArray&gt;0&lt;/DoPHPArray&gt;
+&lt;DoEnhancedPHP&gt;0&lt;/DoEnhancedPHP&gt;
+&lt;SSLPassword&gt;dqJwBQ==&lt;/SSLPassword&gt;
+&lt;ResAction&gt;www&lt;/ResAction&gt;
+&lt;ResFolder&gt;c:\www&lt;/ResFolder&gt;
+&lt;ServeRes&gt;-1&lt;/ServeRes&gt;
+&lt;COTGKey/&gt;
+&lt;CORSHostsList&gt;*&lt;/CORSHostsList&gt;
+&lt;/HTTP&gt;
+</HTTP>
+<PPLpd>&lt;Lpd&gt;
+&lt;DebugMode&gt;0&lt;/DebugMode&gt;
+&lt;PortRange&gt;-1&lt;/PortRange&gt;
+&lt;Strict1179&gt;0&lt;/Strict1179&gt;
+&lt;BsdMode&gt;0&lt;/BsdMode&gt;
+&lt;Timeout&gt;7200&lt;/Timeout&gt;
+&lt;/Lpd&gt;
+</PPLpd>
+<PPSerial>&lt;SerialCapture&gt;
+&lt;DebugMode&gt;0&lt;/DebugMode&gt;
+&lt;ComPort&gt;1&lt;/ComPort&gt;
+&lt;BaudRate&gt;9600&lt;/BaudRate&gt;
+&lt;StopBits&gt;1&lt;/StopBits&gt;
+&lt;DataBits&gt;8&lt;/DataBits&gt;
+&lt;Timeout&gt;30&lt;/Timeout&gt;
+&lt;Parity&gt;0&lt;/Parity&gt;
+&lt;EOJStrings&gt;\004
+%%EOJ
+%%EOPPress&lt;/EOJStrings&gt;
+&lt;/SerialCapture&gt;
+</PPSerial>
+<InputSMTP>&lt;InputSMTP&gt;
+&lt;DebugMode&gt;0&lt;/DebugMode&gt;
+&lt;Port&gt;25&lt;/Port&gt;
+&lt;Authentication&gt;0&lt;/Authentication&gt;
+&lt;SSLRootCert/&gt;
+&lt;SSLCert/&gt;
+&lt;SSLKey/&gt;
+&lt;SSLPassword/&gt;
+&lt;/InputSMTP&gt;
+</InputSMTP>
+<PPTelnet>&lt;TelnetCapture&gt;
+&lt;DebugMode&gt;0&lt;/DebugMode&gt;
+&lt;EOJStrings/&gt;
+&lt;UseDelimiters&gt;0&lt;/UseDelimiters&gt;
+&lt;/TelnetCapture&gt;
+</PPTelnet>
+<FTPPut>&lt;FTPPut&gt;
+&lt;DebugMode&gt;0&lt;/DebugMode&gt;
+&lt;interval&gt;120000&lt;/interval&gt;
+&lt;MoveOnError&gt;-1&lt;/MoveOnError&gt;
+&lt;FTPPort&gt;21&lt;/FTPPort&gt;
+&lt;/FTPPut&gt;
+</FTPPut>
+<PPLpr>&lt;Lpr&gt;
+&lt;DebugMode&gt;0&lt;/DebugMode&gt;
+&lt;PortRange&gt;-1&lt;/PortRange&gt;
+&lt;PrinterBanner&gt;0&lt;/PrinterBanner&gt;
+&lt;MoveOnError&gt;-1&lt;/MoveOnError&gt;
+&lt;MaxThreads&gt;5&lt;/MaxThreads&gt;
+&lt;MaxOrNoRetryHours&gt;48&lt;/MaxOrNoRetryHours&gt;
+&lt;RetryInterval&gt;120&lt;/RetryInterval&gt;
+&lt;Timeout&gt;7200&lt;/Timeout&gt;
+&lt;PollingInterval&gt;4&lt;/PollingInterval&gt;
+&lt;/Lpr&gt;
+</PPLpr>
+<NovellConfig>&lt;NovellConfig&gt;
+&lt;NovellLogService&gt;0&lt;/NovellLogService&gt;
+&lt;NovellUserName/&gt;
+&lt;NovellPassword/&gt;
+&lt;NovellTree/&gt;
+&lt;NovellContext/&gt;
+&lt;NovellServer/&gt;
+&lt;NovellExpandUNC&gt;-1&lt;/NovellExpandUNC&gt;
+&lt;LogLevel&gt;3&lt;/LogLevel&gt;
+&lt;LogDeletionDays&gt;10&lt;/LogDeletionDays&gt;
+&lt;MaxThreads&gt;50&lt;/MaxThreads&gt;
+&lt;SyncLogs&gt;0&lt;/SyncLogs&gt;
+&lt;TimestampLogs&gt;-1&lt;/TimestampLogs&gt;
+&lt;/NovellConfig&gt;
+</NovellConfig>
+<OLConnect>&lt;OLConnect&gt;
+&lt;ServerIP&gt;localhost&lt;/ServerIP&gt;
+&lt;ServerPort&gt;9340&lt;/ServerPort&gt;
+&lt;ServerUserName/&gt;
+&lt;ServerPassword/&gt;
+&lt;ServerMailHost/&gt;
+&lt;ServerMailAddress/&gt;
+&lt;ServerMailUser/&gt;
+&lt;ServerMailPW/&gt;
+&lt;ConnectCheckServer&gt;0&lt;/ConnectCheckServer&gt;
+&lt;ConnectTimeout&gt;0&lt;/ConnectTimeout&gt;
+&lt;VoyagerLibDebug&gt;0&lt;/VoyagerLibDebug&gt;
+&lt;/OLConnect&gt;
+</OLConnect>
+<WatchVersion>2018.1.1.13044</WatchVersion>
+<CodePage>1252</CodePage>
+</WatchConfig>

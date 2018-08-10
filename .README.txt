@@ -1,0 +1,19 @@
+DO NOT TOUCH - CLEANUP 1 - Return to Sender Log.cmd
+
+DO NOT TOUCH - CLEANUP 2 - Return to Client Files - NEW ARCHIVE FORMAT.cmd
+
+DO NOT TOUCH - CLEANUP 3 - Archive Job.cmd
+
+DO NOT TOUCH - PioneerDecryptInputFile.cmd
+
+DO NOT TOUCH - PioneerDecryptInputFile.pl - NOT USED
+
+DO NOT TOUCH - Pioneer_Daily_PreProcess.pl										Called from OL Workflow. Strip out names & 
+																				addresses for sorting.
+
+DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V22.OL-package				Current live template & datamapper
+
+DO NOT TOUCH - Pioneer Credit Daily Letters - Auto - V25 RTC.OL-package			Current live return to client template & datamapper
+
+MSWorkflow.OL-workflow															Current live workflow - This is for ALL automated jobs, not just Pioneer
+																				Lives in S:\DATABASES\MSWorkflow.OL-workflow
