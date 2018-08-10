@@ -1,10 +1,5 @@
 @ECHO OFF
 
-REM make temp copy of passphrase in data folder
-REM Backup pgp file to TEMP folder
-REM Decrypt pgp file(s)
-REM Remove temp files
-
 CD "S:\DATABASES\PIONEER CREDIT\DAILY LETTERS WORKFLOW\LIVE - CURRENT PRODUCTION JOB FILES\"
 s:
 
